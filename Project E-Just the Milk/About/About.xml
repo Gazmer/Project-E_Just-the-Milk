@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+<packageId>Gazmer.RimJobWorld.Patches</packageId>
+	<name>RJW Project E: Just the Milk</name>
+	<author>Gazmer</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<description>
+	
+	This is just the Milk Patches from Project E
+	
+	Project E Description:
+	This Project was initially just to get Erins animal and race mods working with my version of RimJobWorld. 
+	My perfectionism became a full repatching of all the races and animals I am currently using. 
+	This mod is planned to including Custom Parts for every race. New PartGroups for animals based off of scientific Family, Order, or Class depending on how much work it would take.
+	This mod was made by by looking at/ripping apart the work of many LoversLab posters and the previous master patch by Abraxas. 
+	People whose code I remember staring too long at include: Abraxas, muri, TrahsPanda
+	People whose mods I have/plan to defile include: Erin, Vanilla Expanded Team, Neronix17.
+	I have not tested fuctionality without the master patch present to have mine overwrite.
+	
+	This is a HUGE work in progress and is not in any way ready to be posted and being made by a person new to modding.
+	
+	Current Milk Patches:
+	Erin's AuRa (Needs Testing)
+	Erin's Azaphrae (Needs Testing)
+	Erin's Miqote (Needs Testing)
+	Erin's Sephyr (Needs Testing)
+	Erin's Viera (Needs Testing)
+	</description>
+	<loadAfter>
+		<li>rim.job.world</li>
+		<li>abraxas.rjw.racesupport</li>
+	</loadAfter>
+</ModMetaData>

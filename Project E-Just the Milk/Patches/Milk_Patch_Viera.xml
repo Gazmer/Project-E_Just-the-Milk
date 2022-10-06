@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Erin's Viera</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ERN_Viera"]/comps</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ERN_Viera"]</xpath>
+						<value>
+							<comps>
+								<li Class="Milk.CompProperties_MilkableHuman">
+									<milkDef>HumanoidMilk</milkDef>
+									<milkIntervalDays>3</milkIntervalDays>
+									<milkAmount>12</milkAmount>
+									<milkFemaleOnly>false</milkFemaleOnly>
+								</li>
+								<li Class="Milk.CompProperties_HyperMilkableHuman">
+									<milkDef>HumanoidMilk</milkDef>
+									<milkIntervalDays>1</milkIntervalDays>
+									<milkAmount>12</milkAmount>
+									<milkFemaleOnly>false</milkFemaleOnly>
+								</li>
+							</comps>
+						</value>
+					</nomatch>
+					<match Class="PatchOperationAdd">
+						<xpath>Defs/AlienRace.ThingDef_AlienRace[defName="ERN_Viera"]/comps</xpath>
+						<value>
+							<li Class="Milk.CompProperties_MilkableHuman">
+								<milkDef>HumanoidMilk</milkDef>
+								<milkIntervalDays>3</milkIntervalDays>
+								<milkAmount>12</milkAmount>
+								<milkFemaleOnly>false</milkFemaleOnly>
+							</li>
+							<li Class="Milk.CompProperties_HyperMilkableHuman">
+								<milkDef>HumanoidMilk</milkDef>
+								<milkIntervalDays>1</milkIntervalDays>
+								<milkAmount>12</milkAmount>
+								<milkFemaleOnly>false</milkFemaleOnly>
+							</li>
+						</value>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
